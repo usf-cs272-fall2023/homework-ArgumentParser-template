@@ -56,6 +56,7 @@ public class ArgumentParserTest {
 	 * Tests for the {@link ArgumentParser#isFlag(String)} method.
 	 */
 	@Nested
+	@Tag("A")
 	@TestMethodOrder(OrderAnnotation.class)
 	public class A_FlagTests {
 		/**
@@ -147,6 +148,7 @@ public class ArgumentParserTest {
 	 * Tests for the {@link ArgumentParser#numFlags()} method.
 	 */
 	@Nested
+	@Tag("B")
 	@TestMethodOrder(OrderAnnotation.class)
 	public class B_CountTests {
 		/**
@@ -287,6 +289,7 @@ public class ArgumentParserTest {
 	 * Tests how well the {@link ArgumentParser#parse(String[])} method works.
 	 */
 	@Nested
+	@Tag("C")
 	@TestMethodOrder(OrderAnnotation.class)
 	public class C_ParseTests {
 		/**
@@ -483,6 +486,7 @@ public class ArgumentParserTest {
 	 * {@link ArgumentParser#getInteger(String, int)} methods.
 	 */
 	@Nested
+	@Tag("D")
 	@TestMethodOrder(OrderAnnotation.class)
 	public class D_ValueTests {
 		/**
@@ -669,6 +673,7 @@ public class ArgumentParserTest {
 	 * the README example.
 	 */
 	@Nested
+	@Tag("E")
 	@TestMethodOrder(OrderAnnotation.class)
 	public class E_ExampleTests {
 		/**
@@ -767,8 +772,9 @@ public class ArgumentParserTest {
 	/**
 	 * Imperfect tests to try and determine if the approach may have issues.
 	 */
-	@Tag("approach")
 	@Nested
+	@Tag("F")
+	@Tag("approach")
 	@TestMethodOrder(OrderAnnotation.class)
 	public class F_ApproachTests {
 		/**
